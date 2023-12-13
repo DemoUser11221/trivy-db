@@ -3,10 +3,7 @@ LDFLAGS=-ldflags "-s -w"
 
 GOPATH=$(shell go env GOPATH)
 GOBIN=$(GOPATH)/bin
-
-ifndef REPO_OWNER
-    REPO_OWNER=aquasecurity
-endif
+REPO_OWNER=aquasecurity
 
 u := $(if $(update),-u)
 
